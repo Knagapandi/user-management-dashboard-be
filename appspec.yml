@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: ./ 
+    destination: /appdata/scuf-dev-be/scuf-dev-be
+    overwrite: yes
+    
+hooks:
+  BeforeInstall:
+    - location: scripts/cleanup.sh
+  AfterInstall:
+    - location: scripts/pm2.sh
