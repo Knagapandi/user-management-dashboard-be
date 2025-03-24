@@ -20,8 +20,6 @@ import { User } from './users/entities/user.entity';
     }),
     AuthModule,
     UsersModule,
-    DocumentModule,
-    IngestionModule
   ],
 })
 export class AppModule {}
